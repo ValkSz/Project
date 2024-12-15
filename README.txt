@@ -1,3 +1,6 @@
+Video used for testing: https://www.pexels.com/video/traffic-flow-in-the-highway-2103099/
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 After installing requirements start up main.py, after its done, it will create all needed information for creating bounding boxes
 In file vid_create.py you can uncomment lines 59 and 60 to create a preview window, after you choose the option you can start vid_create.py file, which
 will create video with bounding boxes.
