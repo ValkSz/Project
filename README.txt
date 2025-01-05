@@ -1,9 +1,7 @@
 Video used for testing: https://www.pexels.com/video/traffic-flow-in-the-highway-2103099/
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-After installing requirements start up main.py, after its done, it will create all needed information for creating bounding boxes
-In file vid_create.py you can uncomment lines 59 and 60 to create a preview window, after you choose the option you can start vid_create.py file, which
-will create video with bounding boxes.
+Download the video, and put it into "video_input" folder, then start up the main.py file (it's all in one file)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Errors:
@@ -13,6 +11,10 @@ If you get error like:
 #	AttributeError: module 'PIL.Image' has no attribute 'ANTIALIAS'
 
 You need to head to ".\pythonProject\.venv\lib\site-packages\easyocr\utils.py" and switch out the "Image.ANTIALIAS" to "Image.LANCZOS" in both lines 574 and 576
+
+If the python file does not open preview nor create usable "out_vid.py", you just have to try a couple of times, i honestly have no idea why this even happends, but im too tired to try and fix it.
+If the bounding boxes of license plates(blue ones) are not on the license plates, but still follow the trajectory of their license plate, than you need to restart the program a couple times,
+its a quirk of machine learning algorithm I belive.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
